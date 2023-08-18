@@ -14,5 +14,12 @@ int categoria_idade(int cat, int idade){
 }
 
 void main(){
+	int cat, idade;
+	
+	print("Informe a idade: ");
+	scanf("%d", &idade);
+	printf("Informe a categoria: ");
+	scanf("%d", &cat);
+	
 	
 }
