@@ -7,23 +7,21 @@ void main(){
 	
 	int i, num, num_maior = 0, seg_maior = 0;
 	
-	for (i = 1; i <= 5; i++){
+	for (i = 1; i <= 3; i++){
 		printf("Informe o numero: ");
 		scanf("%d", &num);
 		
-		num_maior = 0;
-		seg_maior = 0;
-		
-		if(num_maior < num){
+		if(num > num_maior){
+			seg_maior = num_maior;
 			num_maior = num;
 		}
 		else{
-			if(seg_maior < num_maior){
-				seg_maior = num_maior;
+			if(num_maior > num && num > seg_maior){
+				seg_maior = num;
 			}
 		}
 	}
 	
 	printf("Numero Maior: %0.2f", num_maior);
-	printf("Segundo Maior: %0.2f", seg_maior);
+	printf("\nSegundo Maior: %0.2f", seg_maior);
 }
