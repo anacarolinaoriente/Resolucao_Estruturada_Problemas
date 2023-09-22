@@ -12,7 +12,6 @@ void carregar_vetor(int vetd[TF]){
 	for(i=0; i<TF; i++){
 		printf("Informe o Vetor[%d]", i);
 		scanf("%d", &vetd[i]);
-		
 	}
 }
 
